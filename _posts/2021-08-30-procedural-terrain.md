@@ -11,7 +11,7 @@ In the third year of my university degree, for my dissertation I decided to inve
 
 {:refdef: style="text-align: center;"}
 <img src="/assets/images/procedural-terrain/terrain-top-down.png" alt="" width="100%" height="500px"/>
-<img src="/assets/images/procedural-terrain/coordinate-system.png" alt="" class="cover" width="80%" height="500px"/>
+<img src="/assets/images/procedural-terrain/coordinate-system.png" alt="" class="cover"/>
 {: refdef}
 
 {:refdef: style="text-align: center;"}
