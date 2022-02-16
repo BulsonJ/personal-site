@@ -15,13 +15,13 @@ As part of the 4th year of my degree, I have also gained a large amount of exper
 <ul>
   <li>Advanced Programming for Games (100%)</li>
   <li>Advanced Graphics for Games (90%)</li>
-  <li>Advanced Game Technologies (Mark awaiting)</li>
+  <li>Advanced Game Technologies (74%)</li>
   <li>Engineering Gaming Solutions within a Team (Yet to complete)</li>
   <li>Project and Dissertation for MCOMP (Yet to complete)</li>
   <li>Security Analysis of Complex Systems (Yet to complete)</li>
 </ul>
 
-
+Before this year, I had not really considered myself to have a specific interest within game development, except for Gameplay programming. However, after completing the Graphics for Games module, I've learnt a lot about renderers and rendering API and I found it really interesting to be able to actually understand how things are actually drawn to the screen. Currently, as part of the team project, I'm also working on the Graphics side for the team and I am in charge of expanding the functionality of the rendering code to not only run in OpenGL, but also in GNM for the PS4. Although I am open to all aspects of game development, I would love to be able to do find some work in Graphics.
 
 If you want to hear more from me, make sure to follow me on [my twitter](https://twitter.com/Bulson_Jack). I use this to post about any projects I'm working on and other things that I am pursuing.
 
