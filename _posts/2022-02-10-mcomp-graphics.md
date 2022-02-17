@@ -16,4 +16,4 @@ For the submission for this module, I was able to create a scene that included:
 
 From all of my modules at University, this one was my favourite. It was fascinating to learn about how Graphics pipelines actually work and how the games that I play are drawn to the screen. It also opened my eyes to the amount of amazing work that has to take place for such advanced graphics features to be created. Implementing new graphics features was really satisfying, especially once a feature was implemented correctly and you can see the full effects of it.
 
-You can view the scene in a youtube video [here](https://www.youtube.com/watch?v=dZs4oOYhsKM);
+You can view the scene in a youtube video [here](https://www.youtube.com/watch?v=dZs4oOYhsKM).
