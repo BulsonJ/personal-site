@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My Vulkan Renderer"
+title:  "First Vulkan Renderer"
 category: personal
 ---
 
@@ -23,8 +23,6 @@ Currently, what I've added so far is:
 - (Optional) Use of index buffers
 
 I'm planning to continue working on this renderer in my spare time. For my dissertation this year, I want to investigate Hydraulic Erosion, and I'm going to use this Vulkan renderer as part of it.
-
-If you would like to take a look at the source code, you can check out my repository on [GitHub](https://github.com/BulsonJ/Vulkan-Playground). You can also check out my [Trello board](https://trello.com/b/uCrWNyLY/vulkan-renderer) for this project.
 
 
 
