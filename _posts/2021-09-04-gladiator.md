@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Gladiator"
-tags: university
-category: university
+category: project
 ---
 ![Gladiator](/assets/images/gladiator_main.png)
 

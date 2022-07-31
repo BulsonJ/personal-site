@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Near Infinite, Procedural Terrain"
-category: university
+category: project
 ---
 <img src="/assets/images/procedural-terrain/terrain.png" alt="" width="100%" height="500px"/>
 

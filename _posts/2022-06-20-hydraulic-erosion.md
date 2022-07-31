@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hydraulic Erosion"
-category: university
+category: project
 ---
 
 ![Renderer](/assets/images/vulkan/rendererInitial.png)
