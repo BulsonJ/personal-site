@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "First Vulkan Renderer"
-category: personal
+category: project
 ---
 
 ![Renderer](/assets/images/vulkan/rendererInitial.png)

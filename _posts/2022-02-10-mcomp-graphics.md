@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MComp Advanced Graphics"
-category: university
+category: project
 ---
 
 The second module I completed at University this year was Advanced Graphics for Games. For this module, we initially learnt the basics of rendering and using OpenGL, and then we were tasked with creating a graphics scene of a tropical island, and implementing different graphical features to increase the fidelity of the scene.

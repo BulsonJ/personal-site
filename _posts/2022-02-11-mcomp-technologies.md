@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MComp Advanced Game Technologies"
-category: university
+category: project
 ---
 
 The third module I completed at University was Advanced Game Technologies. This module focused on creating a physics engines, and our submission was to create a game based on Screwball Scramble.

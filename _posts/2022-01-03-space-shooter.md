@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Untitled Space Shooter"
-category: personal
+category: project
 ---
 ![Untitled Space Shooter](/assets/images/20210915_space_shooter.png)
 
