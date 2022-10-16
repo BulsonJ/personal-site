@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+exclude: true
 ---
 # Welcome!
 
@@ -13,8 +14,3 @@ In my four years at university, I gained a large amount of experience programmin
 I'm now working at Sumo Digital in Newcastle as a Graduate Programmer.
 
 If you want to hear more from me, make sure to follow me on [my twitter](https://twitter.com/Bulson_Jack). I use this to post about any projects I'm working on and other things that I am pursuing.
-
-# CV
-
-<iframe src="/assets/files/Jack_Bulson_cv.pdf" width="100%" height="500px">
-    </iframe>
