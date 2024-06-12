@@ -4,6 +4,8 @@ title:  "Vulkan Rust Game Engine"
 category: project
 ---
 
+![Engine](/assets/images/vulkan/rustengine.png)
+
 After my dissertation was finished, I had learnt the basic of Vulkan. I started working on my own renderer and game engine using C++. 
 However, I started learning Rust and found many of it's features nice to use, and found the development process very convenient, so I 
 decided to switch to using it.
@@ -32,38 +34,44 @@ Particles (2D & 3D):
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d0zJSWPXQaQ?si=_QS3zfPNxDQ3HX7y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IzAv00Y4xRo?si=K3shU0qNRLg70OhN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+![Bloom](/assets/images/vulkan/bloom.png)
 
-
-# Breakdown
+# Overview
 
 My project consists of three parts:
 - Game
 - Engine
 - Graphics Library
 
-Game
+## Game
 All the game specific logic is handled within this.
 
 egui integration is handled at this level and uses the public renderer API to be drawn. Allows for it to be easily removed if not necessary.
 
-Engine
-Contains timing and asset management logic. Asset Manager caches off textures and is able to load .gltf files.
+## Engine
+Contains timing and asset management logic. 
 
-Graphics Library - jb_gfx
+Asset Manager caches off textures and is able to load .gltf files.
+
+## Graphics Library - jb_gfx
 Contains all of the rendering logic. 
 
+### Public API
 Public API involves returning handles to render resources which the user can pass back into functions that the renderer will use. 
-RenderModelHandle is a MeshHandle and a MaterialInstanceHandle with a transform.
+RenderModel is a MeshHandle and a MaterialInstanceHandle with a transform.
 A MaterialInstance is diffuse & emissive colours, and optionally textures.
 For each Mesh there is one draw command to draw all of the meshes, since currently they all use the same material.
 
+### UI
 Public UI interface simply takes in a struct containing vertices and indices, an ImageHandle and a scissor. Needs to be pushed to the Renderer every frame.
 
+### RenderList
 RenderList abstracts RenderPass building away. My simplified version of a RenderGraph as the ordering has to be specified by the user.
 Attachments and RenderPasses are referred to by String.
 DrawCommands are generated for models, particles etc, which are then used in each pass to render them all.
 
 Example code:
+
 {% highlight rust %}
         let forward = list.add_pass(
             "forward",
@@ -105,6 +113,11 @@ Example code:
         });
 {% endhighlight %}
 
+# Bugs
+As with all graphics projects, had some interesting bugs along the way:
+![bug](/assets/images/vulkan/bug.png)
+![bug2](/assets/images/vulkan/bug2.png)
+![bug3](/assets/images/vulkan/bug3.png)
 
 
 
