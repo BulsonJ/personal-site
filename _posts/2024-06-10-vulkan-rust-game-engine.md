@@ -23,14 +23,14 @@ Showcase:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YvuSozLz2Ls?si=wz043gpAYrZJz-1z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Reloadable Shaders:
-<iframe width="420" height="315" src="https://www.youtube.com/watch?v=8ndSdJrnvRk" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8ndSdJrnvRk?si=tIP7pyJXoFUndc0L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Lighting & Shadows:
-<iframe width="420" height="315" src="https://www.youtube.com/watch?v=RwFS4GX6STQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RwFS4GX6STQ?si=5j57xjiMvAMQiHTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Particles (2D & 3D):
-<iframe width="420" height="315" src="https://www.youtube.com/watch?v=d0zJSWPXQaQ" frameborder="0" allowfullscreen></iframe>
-<iframe width="420" height="315" src="https://www.youtube.com/watch?v=IzAv00Y4xRo" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d0zJSWPXQaQ?si=_QS3zfPNxDQ3HX7y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IzAv00Y4xRo?si=K3shU0qNRLg70OhN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
