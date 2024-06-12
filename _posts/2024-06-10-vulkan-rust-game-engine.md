@@ -1,0 +1,120 @@
+---
+layout: post
+title:  "Vulkan Rust Game Engine"
+category: project
+---
+
+After my dissertation was finished, I had learnt the basic of Vulkan. I started working on my own renderer and game engine using C++. 
+However, I started learning Rust and found many of it's features nice to use, and found the development process very convenient, so I 
+decided to switch to using it.
+
+Features:
+- PBR Lighting
+- Basic Shadows
+- Bloom
+- Bindless Rendering
+- Particle Systems (2D & 3D)
+- egui integration
+- Reloadable Shaders
+
+This was the biggest personal project that I have worked on thus far. Initially I was just going to make a Renderer, but pivoted towards making a simple plane game. After getting busier at work, I placed the project on hold, but you can see the results below:
+
+Showcase:
+<iframe width="420" height="315" src="https://www.youtube.com/watch?v=YvuSozLz2Ls" frameborder="0" allowfullscreen></iframe>
+
+Reloadable Shaders:
+<iframe width="420" height="315" src="https://www.youtube.com/watch?v=8ndSdJrnvRk" frameborder="0" allowfullscreen></iframe>
+
+Lighting & Shadows:
+<iframe width="420" height="315" src="https://www.youtube.com/watch?v=RwFS4GX6STQ" frameborder="0" allowfullscreen></iframe>
+
+Particles (2D & 3D):
+<iframe width="420" height="315" src="https://www.youtube.com/watch?v=d0zJSWPXQaQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/watch?v=IzAv00Y4xRo" frameborder="0" allowfullscreen></iframe>
+
+
+
+# Breakdown
+
+My project consists of three parts:
+- Game
+- Engine
+- Graphics Library
+
+Game
+All the game specific logic is handled within this.
+
+egui integration is handled at this level and uses the public renderer API to be drawn. Allows for it to be easily removed if not necessary.
+
+Engine
+Contains timing and asset management logic. Asset Manager caches off textures and is able to load .gltf files.
+
+Graphics Library - jb_gfx
+Contains all of the rendering logic. 
+
+Public API involves returning handles to render resources which the user can pass back into functions that the renderer will use. 
+RenderModelHandle is a MeshHandle and a MaterialInstanceHandle with a transform.
+A MaterialInstance is diffuse & emissive colours, and optionally textures.
+For each Mesh there is one draw command to draw all of the meshes, since currently they all use the same material.
+
+Public UI interface simply takes in a struct containing vertices and indices, an ImageHandle and a scissor. Needs to be pushed to the Renderer every frame.
+
+RenderList abstracts RenderPass building away. My simplified version of a RenderGraph as the ordering has to be specified by the user.
+Attachments and RenderPasses are referred to by String.
+DrawCommands are generated for models, particles etc, which are then used in each pass to render them all.
+
+Example code:
+{% highlight rust %}
+        let forward = list.add_pass(
+            "forward",
+            RenderPassLayout::default()
+                .add_color_attachment("forward", &default_attachment)
+                .add_color_attachment("bright", &bright)
+                .set_clear_colour([0.0, 0.0, 0.0, 1.0])
+                .set_depth_stencil_attachment("depth", &depth)
+                .set_depth_stencil_clear(1.0, 0),
+        );
+
+        let combine = list.add_pass(
+            "combine",
+            RenderPassLayout::default()
+                .add_color_attachment("output", &default_attachment)
+                .add_texture_input("forward")
+                .add_texture_input("bloom_vertical")
+                .set_clear_colour([0.0, 0.0, 0.0, 1.0]),
+        );
+
+        list.set_backbuffer("output");
+        list.set_pass_order(&[
+            shadow,
+            gbuffer,
+            deferred_lighting,
+            forward,
+            bloom_initial,
+            bloom_vertical,
+            bloom_horizontal,
+            bloom_final,
+            combine,
+            ui,
+        ]);
+
+         self.list.run_pass(self.forward, |list, cmd| {
+            {
+                // Draw particles
+            }
+        });
+{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
