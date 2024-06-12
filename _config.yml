@@ -21,10 +21,9 @@
 title: Jack Bulson
 email: jacktbulson@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Graduate Programmer @ Sumo Digital
+  Gameplay Programmer @ Sumo Digital
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "jackbulson.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: Bulson_Jack
 github_username:  BulsonJ
 
 # Build settings
