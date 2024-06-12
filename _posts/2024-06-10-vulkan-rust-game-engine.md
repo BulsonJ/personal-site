@@ -20,7 +20,7 @@ Features:
 This was the biggest personal project that I have worked on thus far. Initially I was just going to make a Renderer, but pivoted towards making a simple plane game. After getting busier at work, I placed the project on hold, but you can see the results below:
 
 Showcase:
-<iframe width="420" height="315" src="https://www.youtube.com/watch?v=YvuSozLz2Ls" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YvuSozLz2Ls?si=wz043gpAYrZJz-1z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Reloadable Shaders:
 <iframe width="420" height="315" src="https://www.youtube.com/watch?v=8ndSdJrnvRk" frameborder="0" allowfullscreen></iframe>
