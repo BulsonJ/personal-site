@@ -52,5 +52,7 @@ plugins:
 #   - vendor/ruby/
 
 header_pages:
- - blog.md
+ - games.md
  - projects.md
+ - blog.md
+
